@@ -1,971 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lord Code - Aprenda Programação</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-    <meta charset="UTF-8">
+    <body>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+        <header class="header">
+            <a href="#inicio" class="logo" id="homeLink"><span>&lt;/&gt;</span>Lord Code</a>
 
-    <title>Lord Code - Aprenda Programação</title>
+            <nav class="navbar">
+                <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
+                <a href="#cursos" class="nav-link" data-section="cursos">Cursos</a>
+                <a href="#sobre" class="nav-link" data-section="sobre">Sobre nós</a>
+            </nav>
 
-    <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <a href="#inicio" class="login-btn" id="loginBtn">Entrar</a>
+        </header>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+        <main id="mainSite">
+            <section class="hero page-section" id="inicio">
 
-    <link rel="stylesheet" href="style.css">
+                <div class="hero-content">
 
-</head>
+                    <p class="hero-tag">APRENDA PROGRAMANDO</p>
+                    <h1>Aprenda programação <span>de forma guiada.</span></h1>
+                    <p class="hero-description">Escolha uma linguagem, siga sua trilha de aprendizado e evolua passo a passo através de aulas e desafios.</p>
+                    <button class="hero-btn" id="startBtn">Começar agora</button>
 
+                </div>
 
-<body>
+                <div class="hero-code">
 
+                    <div class="code-window">
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
-
-    <header class="header">
-
-        <a
-            href="#inicio"
-            class="logo"
-            onclick="goHome()"
-        >
-            <span>&lt;/&gt;</span>
-            Lord Code
-        </a>
-
-
-        <nav class="navbar">
-
-            <a
-                href="#inicio"
-                class="nav-link active"
-                data-section="inicio"
-            >
-                Início
-            </a>
-
-            <a
-                href="#cursos"
-                class="nav-link"
-                data-section="cursos"
-            >
-                Cursos
-            </a>
-
-            <a
-                href="#sobre"
-                class="nav-link"
-                data-section="sobre"
-            >
-                Sobre nós
-            </a>
-
-        </nav>
-
-
-        <a
-            href="mailto:contato@lordcode.com"
-            class="login-btn"
-        >
-            Contato
-        </a>
-
-    </header>
-
-
-    <!-- =========================
-         SITE PRINCIPAL
-    ========================== -->
-
-    <main id="mainSite">
-
-
-        <!-- =========================
-             HERO
-        ========================== -->
-
-        <section
-            class="hero page-section"
-            id="inicio"
-        >
-
-            <div class="hero-content">
-
-                <p class="hero-tag">
-                    APRENDA PROGRAMANDO
-                </p>
-
-
-                <h1>
-                    Aprenda programação
-                    <span>de forma guiada.</span>
-                </h1>
-
-
-                <p class="hero-description">
-                    Escolha uma linguagem, siga sua trilha de aprendizado
-                    e evolua passo a passo através de aulas e desafios.
-                </p>
-
-
-                <button
-                    class="hero-btn"
-                    onclick="scrollToCourses()"
-                >
-                    Começar agora
-                </button>
-
-            </div>
-
-
-            <!-- =========================
-                 CÓDIGO DINÂMICO
-            ========================== -->
-
-            <div class="hero-code">
-
-                <div class="code-window">
-
-                    <div class="code-top">
-
-                        <div class="code-dots">
-
-                            <span></span>
-                            <span></span>
-                            <span></span>
-
+                        <div class="code-top">
+                            <div class="code-dots"><span></span><span></span><span></span></div>
+                            <span id="codeLanguage" class="code-language">HTML</span>
                         </div>
 
+                        <div class="code-content"><pre id="codeExample"></pre></div>
 
-                        <span
-                            id="codeLanguage"
-                            class="code-language"
-                        >
-                            HTML
-                        </span>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="courses-section page-section" id="cursos">
+
+                <div class="section-title">     
+                    <p>ESCOLHA SEU CAMINHO</p>
+                    <h2>O que você quer aprender?</h2>
+                    <span>Comece do zero e avance no seu próprio ritmo.</span>
+                </div>
+
+                <div class="courses-grid">
+
+                    <div class="course-card" data-course="html">
+                    
+                        <div class="course-icon html-icon">&lt;/&gt;</div>
+                
+                        <h3>HTML</h3>
+                        <p>Aprenda a estruturar páginas web desde o início.</p>
+
+                        <div class="course-progress">
+                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                        </div>
+
+                        <button>Começar curso →</button>
 
                     </div>
 
+                    <div class="course-card" data-course="css">
 
-                    <div class="code-content">
+                        <div class="course-icon css-icon">#</div>
 
-                        <pre id="codeExample"></pre>
+                        <h3>CSS</h3>
+                        <p>Aprenda a criar layouts, estilos e interfaces modernas.</p>
+
+                        <div class="course-progress">
+                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                        </div>
+
+                        <button>Começar curso →</button>
+
+                    </div>
+
+                    <div class="course-card" data-course="javascript">
+
+                        <div class="course-icon js-icon">JS</div>
+
+                        <h3>JavaScript</h3>
+                        <p>Aprenda lógica, interatividade e programação para a web.</p>
+
+                        <div class="course-progress">
+                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                        </div>
+
+                        <button>Começar curso →</button>
+
+                    </div>
+
+                    <div class="course-card" data-course="c">
+
+                        <div class="course-icon c-icon">C</div>
+
+                        <h3>C</h3>
+                        <p>Aprenda lógica de programação e fundamentos da linguagem C.</p>
+
+                        <div class="course-progress">
+                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
+                            <div class="progress-bar"><div class="progress"></div></div>
+                        </div>
+
+                        <button>Começar curso →</button>
 
                     </div>
 
                 </div>
+            </section>
 
-            </div>
+            <section class="about-section page-section" id="sobre">
+                <div class="about-content">
 
-        </section>
-
-
-        <!-- =========================
-             CURSOS
-        ========================== -->
-
-        <section
-            class="courses-section page-section"
-            id="cursos"
-        >
-
-            <div class="section-title">
-
-                <p>
-                    ESCOLHA SEU CAMINHO
-                </p>
-
-
-                <h2>
-                    O que você quer aprender?
-                </h2>
-
-
-                <span>
-                    Comece do zero e avance no seu próprio ritmo.
-                </span>
-
-            </div>
-
-
-            <div class="courses-grid">
-
-
-                <!-- HTML -->
-
-                <div
-                    class="course-card"
-                    onclick="openCourse('html')"
-                >
-
-                    <div class="course-icon html-icon">
-                        &lt;/&gt;
+                    <div class="about-text">
+                        <p class="section-tag">SOBRE O LORD CODE</p>
+                        <h2>Aprender programação não precisa ser complicado.</h2>
+                        <p>O Lord Code nasceu com uma ideia simples: transformar o aprendizado de programação em uma jornada clara, prática e interativa.</p>
+                        <p>Em vez de apenas assistir aulas ou ler textos, você aprende através de trilhas, desafios, exercícios e pequenos projetos.</p>
+                        <p>Nosso objetivo é fazer com que cada conceito aprendido tenha uma aplicação prática.</p>
+                        <a href="mailto:contato@lordcode.com" class="email-btn">Fale conosco</a>
                     </div>
 
+                    <div class="about-card">
 
-                    <h3>
-                        HTML
-                    </h3>
+                        <div class="about-card-top"><span class="about-icon">&lt;/&gt;</span><span>LORD CODE</span></div>
 
+                        <h3>Aprenda.<br>Pratique.<br>Evolua.</h3>
+                        <p>Uma plataforma pensada para quem quer sair da teoria e realmente começar a programar.</p>
 
-                    <p>
-                        Aprenda a estruturar páginas web
-                        desde o início.
-                    </p>
-
-
-                    <div class="course-progress">
-
-                        <div class="progress-top">
-
-                            <span>
-                                Progresso
-                            </span>
-
-                            <span>
-                                0%
-                            </span>
-
-                        </div>
-
-
-                        <div class="progress-bar">
-
-                            <div class="progress"></div>
-
+                        <div class="about-stats">
+                            <div><strong>4</strong><span>Linguagens</span></div>
+                            <div><strong>∞</strong><span>Possibilidades</span></div>
+                            <div><strong>100%</strong><span>Prática</span></div>
                         </div>
 
                     </div>
+                </div>
 
+                <div class="contact-box">
+                    <div>
+                        <p class="section-tag">ENTRE EM CONTATO</p>
+                        <h3>Tem uma ideia, dúvida ou sugestão?</h3>
+                        <p>Estamos construindo o Lord Code aos poucos. Sua opinião pode ajudar a melhorar a plataforma.</p>
+                    </div>
+                    <a href="mailto:contato@lordcode.com?subject=Contato%20Lord%20Code" class="contact-email">contato@lordcode.com</a>
+                </div>
 
-                    <button>
-                        Começar curso →
-                    </button>
+            </section>
+        </main>
+
+        <main id="courseSite" class="course-site">
+            <section class="course-page" id="coursePage">
+                <div class="course-page-header">
+
+                    <button class="back-btn" id="backCourses">← Voltar para cursos</button>
+
+                    <div>
+                        <p>TRILHA DE APRENDIZADO</p>
+                        <h2 id="courseTitle">HTML</h2>
+                        <span id="courseDescription">Aprenda HTML do básico ao avançado.</span>
+                    </div>
 
                 </div>
 
+                <div class="overall-progress">
+                    <div><span>Seu progresso</span><strong id="overallProgress">0%</strong></div>
+                    <div class="big-progress-bar"><div id="bigProgress" class="big-progress"></div></div>
+                </div>
 
-                <!-- CSS -->
+                <div class="learning-path">
+                    <div class="path-line"></div>
+                    <div class="lesson" data-lesson="0"><div class="lesson-number">1</div><div class="lesson-content"><span>MÓDULO 01</span><h3>Introdução</h3><p>Conheça os fundamentos da linguagem.</p></div></div>
+                    <div class="lesson" data-lesson="1"><div class="lesson-number">2</div><div class="lesson-content"><span>MÓDULO 02</span><h3>Fundamentos</h3><p>Aprenda os principais conceitos.</p></div></div>
+                    <div class="lesson" data-lesson="2"><div class="lesson-number">3</div><div class="lesson-content"><span>MÓDULO 03</span><h3>Prática</h3><p>Resolva exercícios e desafios.</p></div></div>
+                    <div class="lesson" data-lesson="3"><div class="lesson-number">4</div><div class="lesson-content"><span>MÓDULO 04</span><h3>Projeto</h3><p>Coloque tudo em prática.</p></div></div>
+                </div>
 
-                <div
-                    class="course-card"
-                    onclick="openCourse('css')"
-                >
+            </section>
 
-                    <div class="course-icon css-icon">
-                        #
+            <section class="lesson-page" id="lessonPage">
+                <button class="back-btn" id="backCourse">← Voltar para trilha</button>
+
+                <div class="lesson-container">
+                    <div class="lesson-header">
+                        <span id="lessonLabel">AULA 01</span>
+                        <h2 id="lessonTitle">Introdução</h2>
+                        <p id="lessonDescription">Vamos começar entendendo os conceitos fundamentais.</p>
                     </div>
 
+                    <div class="lesson-content-box">
+                        <h3>O que vamos aprender?</h3>
+                        <p>Nesta aula você aprenderá os conceitos fundamentais da linguagem escolhida.</p>
 
-                    <h3>
-                        CSS
-                    </h3>
+                        <div class="example-box">
+                            <div class="example-header">Exemplo</div>
+                            <pre><span class="purple">print</span>(<span class="green">"Olá, mundo!"</span>)</pre>
+                        </div>
 
+                        <div class="exercise">
+                            <h3>Desafio</h3>
+                            <p>Qual comando utilizamos para exibir uma mensagem na tela?</p>
 
-                    <p>
-                        Aprenda a criar layouts,
-                        estilos e interfaces modernas.
-                    </p>
+                            <div class="answer-options">
+                                <button class="answer-option" data-correct="true">print()</button>
+                                <button class="answer-option" data-correct="false">input()</button>
+                                <button class="answer-option" data-correct="false">return()</button>
+                            </div>
 
-
-                    <div class="course-progress">
-
-                        <div class="progress-top">
-
-                            <span>
-                                Progresso
-                            </span>
-
-                            <span>
-                                0%
-                            </span>
+                            <button class="send-answer" id="sendAnswer">Enviar resposta</button>
+                            <p id="answerResult" class="answer-result"></p>
 
                         </div>
 
-
-                        <div class="progress-bar">
-
-                            <div class="progress"></div>
-
-                        </div>
-
+                        <button class="complete-btn" id="completeLesson">Concluir aula →</button>
                     </div>
-
-
-                    <button>
-                        Começar curso →
-                    </button>
-
                 </div>
+            </section>
+        </main>
 
+        <footer><p>© 2026 Lord Code</p></footer>
 
-                <!-- JAVASCRIPT -->
-
-                <div
-                    class="course-card"
-                    onclick="openCourse('javascript')"
-                >
-
-                    <div class="course-icon js-icon">
-                        JS
-                    </div>
-
-
-                    <h3>
-                        JavaScript
-                    </h3>
-
-
-                    <p>
-                        Aprenda lógica, interatividade
-                        e programação para a web.
-                    </p>
-
-
-                    <div class="course-progress">
-
-                        <div class="progress-top">
-
-                            <span>
-                                Progresso
-                            </span>
-
-                            <span>
-                                0%
-                            </span>
-
-                        </div>
-
-
-                        <div class="progress-bar">
-
-                            <div class="progress"></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <button>
-                        Começar curso →
-                    </button>
-
-                </div>
-
-
-                <!-- C -->
-
-                <div
-                    class="course-card"
-                    onclick="openCourse('c')"
-                >
-
-                    <div class="course-icon c-icon">
-                        C
-                    </div>
-
-
-                    <h3>
-                        C
-                    </h3>
-
-
-                    <p>
-                        Aprenda lógica de programação
-                        e fundamentos da linguagem C.
-                    </p>
-
-
-                    <div class="course-progress">
-
-                        <div class="progress-top">
-
-                            <span>
-                                Progresso
-                            </span>
-
-                            <span>
-                                0%
-                            </span>
-
-                        </div>
-
-
-                        <div class="progress-bar">
-
-                            <div class="progress"></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <button>
-                        Começar curso →
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SOBRE NÓS
-        ========================== -->
-
-        <section
-            class="about-section page-section"
-            id="sobre"
-        >
-
-            <div class="about-content">
-
-                <div class="about-text">
-
-                    <p class="section-tag">
-                        SOBRE O LORD CODE
-                    </p>
-
-
-                    <h2>
-                        Aprender programação
-                        não precisa ser complicado.
-                    </h2>
-
-
-                    <p>
-                        O Lord Code nasceu com uma ideia simples:
-                        transformar o aprendizado de programação em
-                        uma jornada clara, prática e interativa.
-                    </p>
-
-
-                    <p>
-                        Em vez de apenas assistir aulas ou ler textos,
-                        você aprende através de trilhas, desafios,
-                        exercícios e pequenos projetos.
-                    </p>
-
-
-                    <p>
-                        Nosso objetivo é fazer com que cada conceito
-                        aprendido tenha uma aplicação prática.
-                    </p>
-
-
-                    <a
-                        href="mailto:contato@lordcode.com"
-                        class="email-btn"
-                    >
-                        Fale conosco
-                    </a>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <div class="about-card-top">
-
-                        <span class="about-icon">
-                            &lt;/&gt;
-                        </span>
-
-                        <span>
-                            LORD CODE
-                        </span>
-
-                    </div>
-
-
-                    <h3>
-                        Aprenda.
-                        Pratique.
-                        Evolua.
-                    </h3>
-
-
-                    <p>
-                        Uma plataforma pensada para quem quer
-                        sair da teoria e realmente começar
-                        a programar.
-                    </p>
-
-
-                    <div class="about-stats">
-
-                        <div>
-
-                            <strong>
-                                4
-                            </strong>
-
-                            <span>
-                                Linguagens
-                            </span>
-
-                        </div>
-
-
-                        <div>
-
-                            <strong>
-                                ∞
-                            </strong>
-
-                            <span>
-                                Possibilidades
-                            </span>
-
-                        </div>
-
-
-                        <div>
-
-                            <strong>
-                                100%
-                            </strong>
-
-                            <span>
-                                Prática
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- CONTATO -->
-
-            <div class="contact-box">
-
-                <div>
-
-                    <p class="section-tag">
-                        ENTRE EM CONTATO
-                    </p>
-
-
-                    <h3>
-                        Tem uma ideia, dúvida ou sugestão?
-                    </h3>
-
-
-                    <p>
-                        Estamos construindo o Lord Code aos poucos.
-                        Sua opinião pode ajudar a melhorar a plataforma.
-                    </p>
-
-                </div>
-
-
-                <a
-                    href="mailto:contato@lordcode.com?subject=Contato%20Lord%20Code"
-                    class="contact-email"
-                >
-                    contato@lordcode.com
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         ÁREA DO CURSO
-    ========================== -->
-
-    <main
-        id="courseSite"
-        class="course-site"
-    >
-
-        <!-- =========================
-             PÁGINA DO CURSO
-        ========================== -->
-
-        <section
-            class="course-page"
-            id="coursePage"
-        >
-
-            <div class="course-page-header">
-
-                <button
-                    class="back-btn"
-                    onclick="backToCourses()"
-                >
-                    ← Voltar para cursos
-                </button>
-
-
-                <div>
-
-                    <p>
-                        TRILHA DE APRENDIZADO
-                    </p>
-
-
-                    <h2 id="courseTitle">
-                        HTML
-                    </h2>
-
-
-                    <span id="courseDescription">
-                        Aprenda HTML do básico ao avançado.
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- PROGRESSO -->
-
-            <div class="overall-progress">
-
-                <div>
-
-                    <span>
-                        Seu progresso
-                    </span>
-
-
-                    <strong id="overallProgress">
-                        0%
-                    </strong>
-
-                </div>
-
-
-                <div class="big-progress-bar">
-
-                    <div
-                        id="bigProgress"
-                        class="big-progress"
-                    ></div>
-
-                </div>
-
-            </div>
-
-
-            <!-- TRILHA -->
-
-            <div class="learning-path">
-
-                <div class="path-line"></div>
-
-
-                <div
-                    class="lesson completed"
-                    onclick="startLesson(0)"
-                >
-
-                    <div class="lesson-number">
-                        1
-                    </div>
-
-
-                    <div class="lesson-content">
-
-                        <span>
-                            MÓDULO 01
-                        </span>
-
-
-                        <h3>
-                            Introdução
-                        </h3>
-
-
-                        <p>
-                            Conheça os fundamentos da linguagem.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    class="lesson"
-                    onclick="startLesson(1)"
-                >
-
-                    <div class="lesson-number">
-                        2
-                    </div>
-
-
-                    <div class="lesson-content">
-
-                        <span>
-                            MÓDULO 02
-                        </span>
-
-
-                        <h3>
-                            Fundamentos
-                        </h3>
-
-
-                        <p>
-                            Aprenda os principais conceitos.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    class="lesson"
-                    onclick="startLesson(2)"
-                >
-
-                    <div class="lesson-number">
-                        3
-                    </div>
-
-
-                    <div class="lesson-content">
-
-                        <span>
-                            MÓDULO 03
-                        </span>
-
-
-                        <h3>
-                            Prática
-                        </h3>
-
-
-                        <p>
-                            Resolva exercícios e desafios.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    class="lesson"
-                    onclick="startLesson(3)"
-                >
-
-                    <div class="lesson-number">
-                        4
-                    </div>
-
-
-                    <div class="lesson-content">
-
-                        <span>
-                            MÓDULO 04
-                        </span>
-
-
-                        <h3>
-                            Projeto
-                        </h3>
-
-
-                        <p>
-                            Coloque tudo em prática.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             AULA
-        ========================== -->
-
-        <section
-            class="lesson-page"
-            id="lessonPage"
-        >
-
-            <button
-                class="back-btn"
-                onclick="backToCourse()"
-            >
-                ← Voltar para trilha
-            </button>
-
-
-            <div class="lesson-container">
-
-
-                <div class="lesson-header">
-
-                    <span>
-                        AULA 01
-                    </span>
-
-
-                    <h2>
-                        Introdução
-                    </h2>
-
-
-                    <p>
-                        Vamos começar entendendo os conceitos
-                        fundamentais.
-                    </p>
-
-                </div>
-
-
-                <div class="lesson-content-box">
-
-
-                    <h3>
-                        O que vamos aprender?
-                    </h3>
-
-
-                    <p>
-                        Nesta aula você aprenderá os conceitos
-                        fundamentais da linguagem escolhida.
-                    </p>
-
-
-                    <!-- EXEMPLO -->
-
-                    <div class="example-box">
-
-                        <div class="example-header">
-                            Exemplo
-                        </div>
-
-
-                        <pre>
-<span class="purple">print</span>(<span class="green">"Olá, mundo!"</span>)
-                        </pre>
-
-                    </div>
-
-
-                    <!-- EXERCÍCIO -->
-
-                    <div class="exercise">
-
-                        <h3>
-                            Desafio
-                        </h3>
-
-
-                        <p>
-                            Qual comando utilizamos para exibir
-                            uma mensagem na tela?
-                        </p>
-
-
-                        <div class="answer-options">
-
-
-                            <button
-                                class="answer-option"
-                                data-correct="true"
-                                onclick="selectAnswer(this)"
-                            >
-                                print()
-                            </button>
-
-
-                            <button
-                                class="answer-option"
-                                data-correct="false"
-                                onclick="selectAnswer(this)"
-                            >
-                                input()
-                            </button>
-
-
-                            <button
-                                class="answer-option"
-                                data-correct="false"
-                                onclick="selectAnswer(this)"
-                            >
-                                return()
-                            </button>
-
-                        </div>
-
-
-                        <button
-                            class="send-answer"
-                            onclick="sendAnswer()"
-                        >
-                            Enviar resposta
-                        </button>
-
-
-                        <p
-                            id="answerResult"
-                            class="answer-result"
-                        ></p>
-
-                    </div>
-
-
-                    <button
-                        class="complete-btn"
-                        onclick="completeLesson()"
-                    >
-                        Concluir aula →
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>© 2026 Lord Code</p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
