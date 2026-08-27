@@ -293,205 +293,158 @@ body {
 }
 
 /* ===== CÓDIGO DO HERO ===== */
+
 .code-window {
-
     width: 440px;
-
     overflow: hidden;
-
     background: #0f1627;
-
     border: 1px solid #27334c;
-
     border-radius: 15px;
-
-    box-shadow:  0 25px 70px rgba(0, 0, 0, 0.35);
-
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
 }
 
 .code-top {
-
     height: 45px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     padding: 0 16px;
-
     background: #161f34;
-
     border-bottom: 1px solid #27334c;
-
 }
 
 .code-dots {
-
     display: flex;
-
     gap: 7px;
-
 }
 
 .code-dots span {
-
     width: 10px;
-
     height: 10px;
-
     background: #4a5369;
-
     border-radius: 50%;
-
 }
 
 .code-language {
-
     font-size: 11px;
-
     font-weight: 800;
-
     letter-spacing: 1px;
-
 }
 
 .code-content {
-
     min-height: 275px;
-
     display: flex;
-
     align-items: center;
-
 }
 
 .code-content pre {
-
     width: 100%;
-
-    padding: 28px;
-
+    margin: 0;
+    padding: 22px 18px;
+    box-sizing: border-box;
     font-family: "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    white-space: pre;
+    overflow-x: hidden;
+    transition: opacity 0.35s ease;
+}
 
-    font-size: 14px;
 
-    line-height: 1.8;
+/* CORES HTML */
 
-    white-space: pre-wrap;
-
-    transition:  opacity 0.35s ease;
-
+.code-html .code-directive {
+    color: #4fc1ff;
 }
 
 .code-html .code-tag {
-
-    color: #e34c26;
-
+    color: #569cd6;
 }
 
 .code-html .code-text {
-
-    color: #f1f1f1;
-
+    color: #cccccc;
 }
 
-.code-html .code-value {
 
-    color: #f06529;
-
-}
+/* CORES CSS */
 
 .code-css .code-selector {
-
-    color: #2965f1;
-
+    color: #dcdcaa;
 }
 
 .code-css .code-property {
-
-    color: #38bdf8;
-
+    color: #9cdcfe;
 }
 
 .code-css .code-value {
-
-    color: #60a5fa;
-
+    color: #ce9178;
 }
 
+.code-css .code-punctuation {
+    color: #d4d4d4;
+}
+
+
+/* CORES JAVASCRIPT */
+
 .code-javascript .code-keyword {
-
-    color: #f7df1e;
-
+    color: #569cd6;
 }
 
 .code-javascript .code-function {
-
-    color: #f7df1e;
-
+    color: #dcdcaa;
 }
 
 .code-javascript .code-string {
-
-    color: #f7df1e;
-
+    color: #ce9178;
 }
 
 .code-javascript .code-text {
-
     color: #f1f1f1;
-
 }
 
+.code-javascript .code-operator {
+    color: #d4d4d4;
+}
+
+
+/* CORES C */
+
 .code-c .code-keyword {
-
     color: #659ad2;
-
 }
 
 .code-c .code-function {
-
     color: #4ec9b0;
-
 }
 
 .code-c .code-string {
-
     color: #ce9178;
-
 }
 
 .code-c .code-text {
-
     color: #d4d4d4;
-
 }
 
+
+/* CORES JAVA */
+
 .code-java .code-keyword {
-
     color: #f89820;
-
 }
 
 .code-java .code-class {
-
     color: #ed8b00;
-
 }
 
 .code-java .code-string {
-
     color: #6a9955;
-
 }
 
 .code-java .code-text {
-
     color: #d4d4d4;
-
 }
+
 
 /* ===== CURSOS ===== */
 .courses-section {

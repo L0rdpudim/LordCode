@@ -24,54 +24,54 @@ const codeExamples = [
     {
         language: "HTML",
         theme: "code-html",
-
-        code: `<span class="code-tag">&lt;!DOCTYPE html&gt;</span>
-<span class="code-tag">&lt;html&gt;</span>
-    <span class="code-tag">&lt;body&gt;</span>
-        <span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello World!</span><span class="code-tag">&lt;/h1&gt;</span>
-    <span class="code-tag">&lt;/body&gt;</span>
-<span class="code-tag">&lt;/html&gt;</span>`
+        code: `<span class="code-tag">&lt;!DOCTYPE</span> <span class="code-directive">html</span><span class="code-tag">&gt;</span>
+                <span class="code-tag">&lt;html&gt;</span>
+                    <span class="code-tag">&lt;body&gt;</span>
+                        <span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello World!</span><span class="code-tag">&lt;/h1&gt;</span>
+                    <span class="code-tag">&lt;/body&gt;</span>
+                <span class="code-tag">&lt;/html&gt;</span>`
     },
 
     {
         language: "CSS",
         theme: "code-css",
-
-        code: `<span class="code-selector">body</span> {
-    <span class="code-property">background</span>: <span class="code-value">#0b1020</span>;
-    <span class="code-property">color</span>: <span class="code-value">white</span>;
-}`
+        code: `<span class="code-selector">body</span> <span class="code-punctuation">{</span>
+                <span class="code-property">background</span><span class="code-punctuation">:</span> <span class="code-value">#0b1020</span><span class="code-punctuation">;</span>
+                <span class="code-property">color</span><span class="code-punctuation">:</span> <span class="code-value">white</span><span class="code-punctuation">;</span>
+            <span class="code-punctuation">}</span>`
     },
 
     {
         language: "JavaScript",
         theme: "code-javascript",
-
         code: `<span class="code-keyword">console</span><span class="code-operator">.</span><span class="code-function">log</span><span class="code-operator">(</span><span class="code-string">"Hello World!"</span><span class="code-operator">)</span><span class="code-operator">;</span>`
     },
 
     {
         language: "C",
         theme: "code-c",
-
         code: `<span class="code-keyword">#include</span> <span class="code-text">&lt;stdio.h&gt;</span>
 
-<span class="code-keyword">int</span> main() {
-    <span class="code-function">printf</span>(<span class="code-string">"Hello World!"</span>);
-    <span class="code-keyword">return</span> 0;
-}`
+                <span class="code-keyword">int</span> main() {
+                    <span class="code-function">printf</span>(<span class="code-string">"Hello World!"</span>);
+                    <span class="code-keyword">return</span> 0;
+                }`
     },
 
     {
         language: "Java",
         theme: "code-java",
 
-        code: `<span class="code-keyword">public class</span> <span class="code-class">Main</span> {
-    <span class="code-keyword">public static void</span> main(String[] args) {
-        System.out.println(<span class="code-string">"Hello World!"</span>);
+        code: [
+            `<span class="code-keyword">public class</span> <span class="code-class">Main</span> {`,
+            `    <span class="code-keyword">public static void</span> main(String[] args) {`,
+            `        System.out.println(<span class="code-string">"Hello World!"</span>);`,
+            `    }`,
+            `}`
+        ].join("\n")
     }
-}`
-    }
+
+
 ];
 
 const $ = selector => document.querySelector(selector);
