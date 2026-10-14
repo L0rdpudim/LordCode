@@ -1,248 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lord Code - Aprenda Programação</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <header class="header">
-            <a href="#inicio" class="logo" id="homeLink"><span>&lt;/&gt;</span>Lord Code</a>
-
-            <nav class="navbar">
-                <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
-                <a href="#cursos" class="nav-link" data-section="cursos">Cursos</a>
-                <a href="#sobre" class="nav-link" data-section="sobre">Sobre nós</a>
-            </nav>
-
-            <a href="#inicio" class="login-btn" id="loginBtn">Entrar</a>
-        </header>
-
-        <main id="mainSite">
-            <section class="hero page-section" id="inicio">
-
-                <div class="hero-content">
-
-                    <p class="hero-tag">APRENDA PROGRAMANDO</p>
-                    <h1>Aprenda programação <span>de forma guiada.</span></h1>
-                    <p class="hero-description">Escolha uma linguagem, siga sua trilha de aprendizado e evolua passo a passo através de aulas e desafios.</p>
-                    <button class="hero-btn" id="startBtn">Começar agora</button>
-
-                </div>
-
-                <div class="hero-code">
-
-                    <div class="code-window">
-
-                        <div class="code-top">
-                            <div class="code-dots"><span></span><span></span><span></span></div>
-                            <span id="codeLanguage" class="code-language">HTML</span>
-                        </div>
-
-                        <div class="code-content">
-                            <pre id="codeExample"></pre>
-                        </div>
-
-                    </div>
-                    
-                </div>
-            </section>
-
-            <section class="courses-section page-section" id="cursos">
-
-                <div class="section-title">     
-                    <p>ESCOLHA SEU CAMINHO</p>
-                    <h2>O que você quer aprender?</h2>
-                    <span>Comece do zero e avance no seu próprio ritmo.</span>
-                </div>
-
-                <div class="courses-grid">
-
-                    <div class="course-card" data-course="html">
-                    
-                        <div class="course-icon html-icon">&lt;/&gt;</div>
-                
-                        <h3>HTML</h3>
-                        <p>Aprenda a estruturar páginas web desde o início.</p>
-
-                        <div class="course-progress">
-                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
-                            <div class="progress-bar"><div class="progress"></div></div>
-                        </div>
-
-                        <button>Começar curso →</button>
-
-                    </div>
-
-                    <div class="course-card" data-course="css">
-
-                        <div class="course-icon css-icon">#</div>
-
-                        <h3>CSS</h3>
-                        <p>Aprenda a criar layouts, estilos e interfaces modernas.</p>
-
-                        <div class="course-progress">
-                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
-                            <div class="progress-bar"><div class="progress"></div></div>
-                        </div>
-
-                        <button>Começar curso →</button>
-
-                    </div>
-
-                    <div class="course-card" data-course="javascript">
-
-                        <div class="course-icon js-icon">JS</div>
-
-                        <h3>JavaScript</h3>
-                        <p>Aprenda lógica, interatividade e programação para a web.</p>
-
-                        <div class="course-progress">
-                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
-                            <div class="progress-bar"><div class="progress"></div></div>
-                        </div>
-
-                        <button>Começar curso →</button>
-
-                    </div>
-
-                    <div class="course-card" data-course="c">
-
-                        <div class="course-icon c-icon">C</div>
-
-                        <h3>C</h3>
-                        <p>Aprenda lógica de programação e fundamentos da linguagem C.</p>
-
-                        <div class="course-progress">
-                            <div class="progress-top"><span>Progresso</span><span>0%</span></div>
-                            <div class="progress-bar"><div class="progress"></div></div>
-                        </div>
-
-                        <button>Começar curso →</button>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="about-section page-section" id="sobre">
-                <div class="about-content">
-
-                    <div class="about-text">
-                        <p class="section-tag">SOBRE O LORD CODE</p>
-                        <h2>Aprender programação não precisa ser complicado.</h2>
-                        <p>O Lord Code nasceu com uma ideia simples: transformar o aprendizado de programação em uma jornada clara, prática e interativa.</p>
-                        <p>Em vez de apenas assistir aulas ou ler textos, você aprende através de trilhas, desafios, exercícios e pequenos projetos.</p>
-                        <p>Nosso objetivo é fazer com que cada conceito aprendido tenha uma aplicação prática.</p>
-                        <a href="mailto:contato@lordcode.com" class="email-btn">Fale conosco</a>
-                    </div>
-
-                    <div class="about-card">
-
-                        <div class="about-card-top"><span class="about-icon">&lt;/&gt;</span><span>LORD CODE</span></div>
-
-                        <h3>Aprenda.<br>Pratique.<br>Evolua.</h3>
-                        <p>Uma plataforma pensada para quem quer sair da teoria e realmente começar a programar.</p>
-
-                        <div class="about-stats">
-                            <div><strong>4</strong><span>Linguagens</span></div>
-                            <div><strong>∞</strong><span>Possibilidades</span></div>
-                            <div><strong>100%</strong><span>Prática</span></div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="contact-box">
-                    <div>
-                        <p class="section-tag">ENTRE EM CONTATO</p>
-                        <h3>Tem uma ideia, dúvida ou sugestão?</h3>
-                        <p>Estamos construindo o Lord Code aos poucos. Sua opinião pode ajudar a melhorar a plataforma.</p>
-                    </div>
-                    <a href="mailto:contato@lordcode.com?subject=Contato%20Lord%20Code" class="contact-email">contato@lordcode.com</a>
-                </div>
-
-            </section>
-        </main>
-
-        <main id="courseSite" class="course-site">
-            <section class="course-page" id="coursePage">
-                <div class="course-page-header">
-
-                    <button class="back-btn" id="backCourses">← Voltar para cursos</button>
-
-                    <div>
-                        <p>TRILHA DE APRENDIZADO</p>
-                        <h2 id="courseTitle">HTML</h2>
-                        <span id="courseDescription">Aprenda HTML do básico ao avançado.</span>
-                    </div>
-
-                </div>
-
-                <div class="overall-progress">
-                    <div><span>Seu progresso</span><strong id="overallProgress">0%</strong></div>
-                    <div class="big-progress-bar"><div id="bigProgress" class="big-progress"></div></div>
-                </div>
-
-                <div class="learning-path">
-                    <div class="path-line"></div>
-                    <div class="lesson" data-lesson="0"><div class="lesson-number">1</div><div class="lesson-content"><span>MÓDULO 01</span><h3>Introdução</h3><p>Conheça os fundamentos da linguagem.</p></div></div>
-                    <div class="lesson" data-lesson="1"><div class="lesson-number">2</div><div class="lesson-content"><span>MÓDULO 02</span><h3>Fundamentos</h3><p>Aprenda os principais conceitos.</p></div></div>
-                    <div class="lesson" data-lesson="2"><div class="lesson-number">3</div><div class="lesson-content"><span>MÓDULO 03</span><h3>Prática</h3><p>Resolva exercícios e desafios.</p></div></div>
-                    <div class="lesson" data-lesson="3"><div class="lesson-number">4</div><div class="lesson-content"><span>MÓDULO 04</span><h3>Projeto</h3><p>Coloque tudo em prática.</p></div></div>
-                </div>
-
-            </section>
-
-            <section class="lesson-page" id="lessonPage">
-                <button class="back-btn" id="backCourse">← Voltar para trilha</button>
-
-                <div class="lesson-container">
-                    <div class="lesson-header">
-                        <span id="lessonLabel">AULA 01</span>
-                        <h2 id="lessonTitle">Introdução</h2>
-                        <p id="lessonDescription">Vamos começar entendendo os conceitos fundamentais.</p>
-                    </div>
-
-                    <div class="lesson-content-box">
-                        <h3>O que vamos aprender?</h3>
-                        <p>Nesta aula você aprenderá os conceitos fundamentais da linguagem escolhida.</p>
-
-                        <div class="example-box">
-                            <div class="example-header">Exemplo</div>
-                            <pre><span class="purple">print</span>(<span class="green">"Olá, mundo!"</span>)</pre>
-                        </div>
-
-                        <div class="exercise">
-                            <h3>Desafio</h3>
-                            <p>Qual comando utilizamos para exibir uma mensagem na tela?</p>
-
-                            <div class="answer-options">
-                                <button class="answer-option" data-correct="true">print()</button>
-                                <button class="answer-option" data-correct="false">input()</button>
-                                <button class="answer-option" data-correct="false">return()</button>
-                            </div>
-
-                            <button class="send-answer" id="sendAnswer">Enviar resposta</button>
-                            <p id="answerResult" class="answer-result"></p>
-
-                        </div>
-
-                        <button class="complete-btn" id="completeLesson">Concluir aula →</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer><p>© 2026 Lord Code</p></footer>
-
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Aprenda HTML, CSS, JavaScript e C em trilhas práticas e guiadas com o Lord Code.">
+  <title>Lord Code — Aprenda programação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainSite">Pular para o conteúdo</a>
+  <header class="header">
+    <a href="#inicio" class="logo" id="homeLink" aria-label="Lord Code — início"><span aria-hidden="true">&lt;/&gt;</span>Lord Code</a>
+    <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegação"><span></span><span></span><span></span></button>
+    <nav class="navbar" id="mainNav" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-link active" data-section="inicio">Início</a>
+      <a href="#cursos" class="nav-link" data-section="cursos">Cursos</a>
+      <a href="#sobre" class="nav-link" data-section="sobre">Sobre</a>
+    </nav>
+    <div class="header-actions">
+      <button class="account-btn" id="accountBtn" aria-disabled="true" title="Área de conta em breve">Conta <span>em breve</span></button>
+    </div>
+  </header>
+
+  <main id="mainSite">
+    <section class="hero page-section" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <p class="hero-tag">APRENDA PROGRAMANDO</p>
+        <h1 id="heroTitle">Aprenda programação <span>de forma guiada.</span></h1>
+        <p class="hero-description">Escolha uma linguagem, acompanhe uma trilha progressiva e pratique com exercícios que ajudam você a aprender passo a passo.</p>
+        <button class="primary-btn" id="startBtn">Explorar curso <span aria-hidden="true">→</span></button>
+        <div class="hero-proof"><span class="proof-dot" aria-hidden="true"></span><span>Seu progresso fica salvo neste navegador.</span></div>
+      </div>
+      <div class="hero-code" aria-label="Exemplos de código em diferentes linguagens">
+        <div class="code-window">
+          <div class="code-top"><div class="code-dots" aria-hidden="true"><span></span><span></span><span></span></div><span id="codeLanguage" class="code-language">HTML</span></div>
+          <div class="code-content"><pre id="codeExample" tabindex="0" aria-label="Exemplo de código rotativo"></pre></div>
+          <div class="code-footer"><span id="codeCaption">Uma estrutura para a web</span><span class="code-indicator" id="codeIndicator">01 / 04</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses-section page-section" id="cursos" aria-labelledby="coursesTitle">
+      <div class="section-title">
+        <p>ESCOLHA SEU CAMINHO</p>
+        <h2 id="coursesTitle">O que você quer aprender?</h2>
+        <span>Quatro trilhas iniciais, organizadas para quem está começando.</span>
+      </div>
+      <div class="overall-overview" aria-label="Resumo do progresso geral">
+        <div class="overview-copy"><span class="eyebrow">SUA JORNADA</span><strong id="homeProgressLabel">0% concluído</strong><span id="homeProgressDetail">0 de 40 aulas concluídas</span></div>
+        <div class="overview-track" role="progressbar" id="homeProgressBar" aria-label="Progresso geral" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="homeProgressFill"></span></div>
+        <div class="overview-rewards"><span><strong id="homeXp">0</strong> XP</span><span><strong id="homeStreak">0</strong> dias seguidos</span></div>
+      </div>
+      <div class="courses-grid" id="coursesGrid" aria-live="polite"></div>
+      <div class="progress-tools"><p>Aprenda no seu ritmo. As respostas e o progresso ficam guardados localmente neste navegador.</p><button class="text-btn" id="resetProgressBtn" title="Será solicitada uma confirmação antes de apagar o progresso" aria-label="Abrir confirmação para reiniciar o progresso">Reiniciar progresso</button></div>
+    </section>
+
+    <section class="about-section page-section" id="sobre" aria-labelledby="aboutTitle">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="section-tag">SOBRE O LORD CODE</p>
+          <h2 id="aboutTitle">Aprender programação não precisa ser complicado.</h2>
+          <p>O Lord Code transforma o estudo em uma jornada clara, com explicações, exemplos e desafios organizados por dificuldade.</p>
+          <p>As trilhas ajudam você a avançar em pequenos passos, revisar aulas já concluídas e acompanhar o que aprendeu sem criar uma conta.</p>
+          <a href="mailto:contato@lordcode.com?subject=Contato%20Lord%20Code" class="secondary-link">Fale conosco <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-card">
+          <div class="about-card-top"><span class="about-icon" aria-hidden="true">&lt;/&gt;</span><span>LORD CODE</span></div>
+          <h3>Aprenda.<br>Pratique.<br>Evolua.</h3>
+          <p>Uma base de estudos com currículos organizados e progresso individual.</p>
+          <div class="about-stats">
+            <div><span class="stat-icon" aria-hidden="true">⌘</span><strong>4</strong><span>Trilhas</span></div>
+            <div><span class="stat-icon" aria-hidden="true">▤</span><strong id="totalLessonsStat">40</strong><span>Aulas</span></div>
+            <div><span class="stat-icon" aria-hidden="true">✓</span><strong>Local</strong><span>Progresso salvo</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-box"><div><p class="section-tag">ENTRE EM CONTATO</p><h3>Tem uma dúvida ou sugestão?</h3><p>Envie uma mensagem pelo seu aplicativo de e-mail.</p></div><a href="mailto:contato@lordcode.com?subject=Contato%20Lord%20Code" class="contact-email contact-send-btn">Enviar uma mensagem <span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <main id="courseSite" class="course-site" hidden>
+    <section class="course-page" id="coursePage" aria-labelledby="courseTitle">
+      <button class="back-btn" id="backCourses">Voltar para cursos</button>
+      <div id="courseDashboard"></div>
+    </section>
+    <section class="lesson-page" id="lessonPage" hidden aria-labelledby="lessonTitle">
+      <div class="lesson-container" id="lessonContainer"></div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Lord Code</p><p class="footer-note">Conteúdo de estudo salvo apenas neste navegador · Sem conta ou sincronização entre dispositivos.</p></footer>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+  <dialog class="reset-dialog" id="resetDialog" aria-labelledby="resetTitle" aria-describedby="resetDescription">
+    <form method="dialog">
+      <span class="dialog-icon" aria-hidden="true">!</span>
+      <h2 id="resetTitle">Reiniciar todo o progresso?</h2>
+      <p id="resetDescription">Esta ação apaga do navegador as aulas concluídas, respostas registradas, XP, conquistas e sequência de estudos. Não é possível desfazer.</p>
+      <div class="dialog-actions"><button class="secondary-btn" value="cancel">Manter progresso</button><button class="danger-btn" id="confirmResetBtn" value="confirm">Apagar meu progresso</button></div>
+    </form>
+  </dialog>
+
+  <script src="data/html.js"></script>
+  <script src="data/css.js"></script>
+  <script src="data/javascript.js"></script>
+  <script src="data/c.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/curriculum.js"></script>
+  <script src="js/checks.js"></script>
+  <script src="js/runner.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/app.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
